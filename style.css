@@ -1,0 +1,296 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+/* ----- LAYOUT ----- */
+
+body {
+    font-family: "Inter", serif;
+    width: 100%;
+    margin: 3.33em auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5em;
+    color: hsl(236, 13%, 42%);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.main {
+    flex: 1;
+}
+
+.desktop-img {
+    width: 100%;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.h1-text-btn {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5em
+}
+
+.bright-h1 {
+    flex: 1;
+}
+
+h1 {
+    font-size: 3.73rem;
+    margin-top: 0;
+    max-width: 100%;
+    color: hsl(240, 100%, 5%);
+}
+
+.main-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2;
+    color: hsl(236, 13%, 42%);
+}
+
+button {
+    max-width: 200px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    padding:1em 2em;
+    border: none;
+    color: hsl(240, 100%, 5%);
+    background-color: hsl(5, 85%, 63%);
+    display: inline-block;
+}
+
+button:hover {
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(240, 100%, 5%);
+}
+
+.main-aside-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3.3em;
+}
+
+.right-column {
+    width: 29%;
+    background-color: bisque;
+    padding: 1.5em;
+    margin-left: 1.5em;
+    background-color: hsl(240, 100%, 5%);
+}
+
+h2 {
+    font-size: 2.13rem;
+    margin-bottom: 1em;
+    color: hsl(35, 77%, 62%);
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    line-height: 25px;
+    color: hsl(36, 100%, 99%);
+}
+
+.no-border-article h3 {
+    color: hsl(36, 100%, 99%);
+}
+
+.no-border-article p {
+    padding-top: 0.5rem;
+}
+
+.article h3 {
+    padding-bottom: 0.533em;
+}
+
+.article p {
+    padding-bottom: 1.667em;
+}
+
+h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.article p {
+    color: hsl(233, 8%, 79%);
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+.no-border-article {
+    color: hsl(233, 8%, 79%);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.33em;
+}
+
+.cards-1,
+.cards-2,
+.cards-3
+{
+    display: flex;
+}
+
+.cards-img {
+    width: 100%;
+    max-width: 30%;
+    margin-bottom: 3.33em;
+}
+
+.cards-text {
+    display: block;
+    justify-content: center;
+    padding-left: 1em;
+    line-height: 30px;
+}   
+
+.cards-text p {
+    color: hsl(236, 13%, 42%);
+}
+
+.container-cards h3 {
+    color:hsl(5, 85%, 63%);
+    font-size: 1.73rem;
+    padding-bottom: 0.38em;
+    margin-top: 0;
+}
+
+.container-cards h4 {
+   color: hsl(240, 100%, 5%);
+   font-size: 1.06rem;
+   padding-bottom: 0.625em;
+}
+
+h4:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        margin: 0px 15px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .main-aside-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .main {
+        flex: 1;
+    }
+
+    .h1-text-btn {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size:2.3rem;
+    }
+
+    br {
+        display: none;
+    }
+    
+    .main-text {
+        margin-right: 0em;
+    }
+    
+    button {
+        font-weight: 800;
+        margin-top: 1.667em;
+        letter-spacing: 4px;
+        padding:1em 2em;
+        border: none;
+        color: hsl(240, 100%, 5%);
+        background-color: hsl(5, 85%, 63%);
+        display: inline-block;
+        min-width: 150px;
+    }
+    
+    button:hover {
+        color: hsl(36, 100%, 99%);
+        background-color: hsl(240, 100%, 5%);
+    }
+    
+    .right-column {
+        margin-left: 0;
+        margin-top: 4em;
+        width: 100%;
+    }
+
+    .container-cards {
+        flex-direction: column;
+    }
+
+}
