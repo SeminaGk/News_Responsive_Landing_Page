@@ -20,20 +20,6 @@ It features a clean, responsive design that works on both desktop and mobile dev
 - CSS3
 - Google Fonts (Inter)
 
-## File Structure
-
-news-page/
-├── index.html
-├── style.css
-├── images/
-    ├── logo.svg
-    ├── icon-menu.svg
-    ├── image-web-3-desktop.jpg
-    ├── image-web-3-mobile.jpg
-    ├── image-retro-pcs.jpg
-    ├── image-top-laptops.jpg
-    └── image-gaming-growth.jpg
-
 ## Getting Started
 
 1. Visit the live site:
